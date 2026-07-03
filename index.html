@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Song Fest - Um espaço moderno, aconchegante e completo para aniversários, confraternizações e celebrações especiais. Estrutura confortável para até 80 convidados.">
+    <meta name="keywords" content="salão de festas, song fest, espaço para eventos, aniversário, confraternização, área gourmet, espaço infantil, são paulo, jardim dona sinha">
+    <meta name="author" content="Song Fest">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://songfest.com.br/">
+    <meta property="og:title" content="Song Fest | Salão de Festas e Celebrações Familiares">
+    <meta property="og:description" content="Espaço moderno, acolhedor e completo para comemorar seus momentos especiais. Conheça nossa estrutura.">
+    <meta property="og:image" content="assets/hero.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Song Fest | Salão de Festas e Celebrações Familiares">
+    <meta property="twitter:description" content="Espaço moderno, acolhedor e completo para comemorar seus momentos especiais. Conheça nossa estrutura.">
+    <meta property="twitter:image" content="assets/hero.jpg">
+
+    <title>Song Fest | Salão de Festas e Celebrações Familiares</title>
+
+    <!-- Google Fonts: Outfit (Geometric & Modern) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Linhas de Grade de Fundo (Estilo Site de Tecnologia/SaaS) -->
+    <div class="grid-background-overlay"></div>
+
+    <!-- Círculos de Brilho de Fundo (Glow Effect) -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- MENU SUPERIOR -->
+    <header class="navbar-header" id="navbar">
+        <div class="navbar-container">
+            <a href="#inicio" class="navbar-logo" id="nav-logo">
+                <img src="assets/logo.jpg" alt="Logo Song Fest" class="logo-img">
+            </a>
+            
+            <nav class="navbar-menu" id="nav-menu">
+                <a href="#inicio" class="nav-link active" id="link-inicio">INÍCIO</a>
+                <a href="#estrutura" class="nav-link" id="link-estrutura">ESTRUTURA</a>
+                <a href="#galeria" class="nav-link" id="link-galeria">GALERIA</a>
+                <a href="#localizacao" class="nav-link" id="link-localizacao">LOCALIZAÇÃO</a>
+                <a href="#contato" class="nav-link" id="link-contato">CONTATO</a>
+            </nav>
+
+            <div class="navbar-actions">
+                <a href="https://wa.me/5511945280491?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20meu%20evento%20no%20Song%20Fest." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-primary btn-nav" 
+                   id="btn-nav-orcamento">
+                   SOLICITAR ORÇAMENTO
+                </a>
+                <button class="mobile-toggle-btn" id="mobile-menu-toggle" aria-label="Abrir menu">
+                    <i data-lucide="menu" class="icon-open"></i>
+                    <i data-lucide="x" class="icon-close"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO -->
+    <section class="section-hero" id="inicio">
+        <div class="hero-image-bg" style="background-image: url('assets/hero.jpg');"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-fade-in-up">
+                    <span class="badge-icon"><i data-lucide="sparkles"></i></span>
+                    <span class="badge-text">O espaço ideal para a sua comemoração</span>
+                </div>
+                <h1 class="hero-title animate-fade-in-up delay-1">
+                    O ESPAÇO IDEAL PARA SUA PRÓXIMA COMEMORAÇÃO.
+                </h1>
+                <p class="hero-description animate-fade-in-up delay-2">
+                    Um espaço versátil e completo para aniversários, confraternizações, festas infantis, chá revelação, encontros familiares e eventos corporativos. Tudo preparado para receber seus convidados com conforto, diversão e praticidade.
+                </p>
+                <div class="hero-actions animate-fade-in-up delay-3">
+                    <a href="https://wa.me/5511945280491?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20meu%20evento%20no%20Song%20Fest." 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn btn-primary btn-large" 
+                       id="btn-hero-primary">
+                       SOLICITAR ORÇAMENTO
+                       <i data-lucide="arrow-right" class="btn-icon"></i>
+                    </a>
+                    <a href="#estrutura" class="btn btn-secondary btn-large" id="btn-hero-secondary">
+                       CONHECER O ESPAÇO
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <span class="scroll-text">Role para explorar</span>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DIFERENCIAIS (ESTRUTURA) -->
+    <section class="section-diferenciais" id="estrutura">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle-tag"><i data-lucide="party-popper"></i> ESTRUTURA COMPLETA E PRÁTICA</span>
+                <h2 class="section-title">TUDO PRONTO PARA A SUA COMEMORAÇÃO.</h2>
+                <p class="section-description">
+                    Nosso espaço foi planejado para oferecer conforto, praticidade e diversão, garantindo que você e seus convidados aproveitem cada momento.
+                </p>
+            </div>
+
+            <!-- Bento Grid de Diferenciais Simplificado e Focado em Fotos -->
+            <div class="bento-grid">
+                <!-- Card 1: Capacidade -->
+                <div class="bento-card" id="card-capacidade" data-lightbox-src="assets/hero.jpg" data-lightbox-caption="Salão Principal - Até 80 convidados">
+                    <div class="card-glow"></div>
+                    <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                    <div class="card-image-bg" style="background-image: url('assets/hero.jpg');"></div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3 class="card-title">Até 80 convidados</h3>
+                    </div>
+                </div>
+
+                <!-- Card 2: Churrasqueira -->
+                <div class="bento-card" id="card-churrasqueira" data-lightbox-src="assets/churrasqueira.jpg" data-lightbox-caption="Churrasqueira Integrada">
+                    <div class="card-glow"></div>
+                    <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                    <div class="card-image-bg" style="background-image: url('assets/churrasqueira.jpg');"></div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i data-lucide="flame"></i>
+                        </div>
+                        <h3 class="card-title">Churrasqueira</h3>
+                    </div>
+                </div>
+
+                <!-- Card 3: Espaço Infantil -->
+                <div class="bento-card" id="card-infantil" data-lightbox-src="assets/kids.jpg" data-lightbox-caption="Brinquedão e Espaço Infantil">
+                    <div class="card-glow"></div>
+                    <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                    <div class="card-image-bg" style="background-image: url('assets/kids.jpg');"></div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <i data-lucide="smile"></i>
+                        </div>
+                        <h3 class="card-title">Espaço Infantil</h3>
+                    </div>
+                </div>
+
+                <!-- Card 4: Mesa de sinuca -->
+                <div class="bento-card" id="card-sinuca" data-lightbox-src="assets/sinuca.jpg" data-lightbox-caption="Mesa de Sinuca Profissional">
+                    <div class="card-glow"></div>
+                    <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                    <div class="card-image-bg" style="background-image: url('assets/sinuca.jpg');"></div>
+                    <div class="card-content">
+                        <div class="card-icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4.5" fill="currentColor"/><text x="12" y="15" font-size="8" font-weight="900" font-family="system-ui, sans-serif" text-anchor="middle" fill="var(--bg-primary)">8</text></svg>
+                        </div>
+                        <h3 class="card-title">Mesa de Sinuca</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO GALERIA (AMBIENTE 1 - SLIDER PREMIUM) -->
+    <section class="section-galeria" id="galeria">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle-tag"><i data-lucide="image"></i> AMBIENTE 1</span>
+                <h2 class="section-title">SALÃO PRINCIPAL.</h2>
+                <p class="section-description">
+                    Um ambiente amplo, bem iluminado e climatizado, perfeito para as mesas dos convidados e a decoração principal.
+                </p>
+            </div>
+
+            <!-- Slider Ambiente 1 -->
+            <div class="gallery-slider-container">
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <!-- Slide 1 -->
+                        <div class="slide-item active" data-index="0" data-lightbox-src="assets/galeria-1.jpg" data-lightbox-caption="Salão Principal e Decoração">
+                            <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                            <img src="assets/galeria-1.jpg" alt="[AMBIENTE 1] Salão Social - Vista Geral das Mesas e Decoração">
+                            <div class="slide-caption">
+                                <span class="caption-badge">Ambiente 1: Salão Principal</span>
+                                <h3>Salão Principal e Decoração</h3>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="slide-item" data-index="1" data-lightbox-src="assets/galeria-2.jpg" data-lightbox-caption="Disposição de Mesas Confortável">
+                            <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                            <img src="assets/galeria-2.jpg" alt="[AMBIENTE 1] Salão Social - Acomodações Modernas e Acesso">
+                            <div class="slide-caption">
+                                <span class="caption-badge">Ambiente 1: Salão Principal</span>
+                                <h3>Disposição de Mesas Confortável</h3>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="slide-item" data-index="2" data-lightbox-src="assets/galeria-3.jpg" data-lightbox-caption="Ambiente Acolhedor e Iluminado">
+                            <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                            <img src="assets/galeria-3.jpg" alt="[AMBIENTE 1] Salão Social - Espaço Climatizado com Iluminação LED">
+                            <div class="slide-caption">
+                                <span class="caption-badge">Ambiente 1: Salão Principal</span>
+                                <h3>Ambiente Acolhedor e Iluminado</h3>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="slide-item" data-index="3" data-lightbox-src="assets/banheiros-duplos.jpg" data-lightbox-caption="Dois Banheiros à Disposição">
+                            <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                            <img src="assets/banheiros-duplos.jpg" class="img-contain" alt="[AMBIENTE 1] Salão Social - Dois Banheiros Modernos">
+                            <div class="slide-caption">
+                                <span class="caption-badge">Ambiente 1: Salão Principal</span>
+                                <h3>Dois Banheiros à Disposição</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <button class="slider-arrow prev" aria-label="Imagem Anterior">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                <button class="slider-arrow next" aria-label="Próxima Imagem">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+
+                <!-- Indicadores -->
+                <div class="slider-dots"></div>
+            </div>
+        </div>
+    </section>    <!-- SEÇÃO GALERIA (AMBIENTE 2 - SLIDER PREMIUM) -->
+    <section class="section-galeria" id="galeria-lazer" style="padding-top: 0;">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle-tag"><i data-lucide="image"></i> AMBIENTE 2</span>
+                <h2 class="section-title">LAZER & CHURRASQUEIRA.</h2>
+                <p class="section-description">
+                    Espaço integrado e descontraído com churrasqueira, brinquedão infantil e mesa de sinuca para a diversão de todos os seus convidados.
+                </p>
+            </div>
+
+            <!-- Slider Ambiente 2 -->
+            <div class="gallery-slider-container">
+                <div class="slider-wrapper">
+                    <div class="slider-track">
+                        <!-- Slide 1 -->
+                        <div class="slide-item active" data-index="0" data-lightbox-src="assets/kids.jpg" data-lightbox-caption="Espaço Kids com Brinquedão">
+                            <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                            <img src="assets/kids.jpg" alt="[AMBIENTE 2] Lazer & Gourmet - Espaço Kids Seguro e Moderno">
+                            <div class="slide-caption">
+                                <span class="caption-badge">Ambiente 2: Lazer & Churrasqueira</span>
+                                <h3>Espaço Kids com Brinquedão</h3>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="slide-item" data-index="1" data-lightbox-src="assets/sinuca.jpg" data-lightbox-caption="Mesa de Sinuca para Lazer">
+                            <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                            <img src="assets/sinuca.jpg" alt="[AMBIENTE 2] Lazer & Gourmet - Mesa de Sinuca Profissional">
+                            <div class="slide-caption">
+                                <span class="caption-badge">Ambiente 2: Lazer & Churrasqueira</span>
+                                <h3>Mesa de Sinuca para Lazer</h3>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="slide-item" data-index="2" data-lightbox-src="assets/churrasqueira.jpg" data-lightbox-caption="Churrasqueira e Área de Suporte">
+                            <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                            <img src="assets/churrasqueira.jpg" alt="[AMBIENTE 2] Lazer & Gourmet - Churrasqueira Premium Integrada">
+                            <div class="slide-caption">
+                                <span class="caption-badge">Ambiente 2: Lazer & Churrasqueira</span>
+                                <h3>Churrasqueira e Área de Suporte</h3>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="slide-item" data-index="3" data-lightbox-src="assets/lazer-geral.jpg" data-lightbox-caption="Espaço Gourmet Integrado">
+                            <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                            <img src="assets/lazer-geral.jpg" alt="[AMBIENTE 2] Lazer & Gourmet - Vista Geral da Área de Lazer">
+                            <div class="slide-caption">
+                                <span class="caption-badge">Ambiente 2: Lazer & Churrasqueira</span>
+                                <h3>Espaço Gourmet Integrado</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <button class="slider-arrow prev" aria-label="Imagem Anterior">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+                <button class="slider-arrow next" aria-label="Próxima Imagem">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+                <!-- Indicadores -->
+                <div class="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO ESTATÍSTICAS -->
+    <section class="section-estatisticas">
+        <div class="section-container">
+            <div class="estatisticas-grid">
+                <div class="estatistica-item">
+                    <div class="estatistica-number" data-value="80">0</div>
+                    <div class="estatistica-label">CAPACIDADE (CONVIDADOS)</div>
+                </div>
+                <div class="estatistica-item">
+                    <div class="estatistica-number" data-value="2">0</div>
+                    <div class="estatistica-label">AMBIENTES</div>
+                </div>
+                <div class="estatistica-item">
+                    <div class="estatistica-number" data-value="1">0</div>
+                    <div class="estatistica-label">ÁREA GOURMET</div>
+                </div>
+                <div class="estatistica-item">
+                    <div class="estatistica-number" data-value="1">0</div>
+                    <div class="estatistica-label">ESPAÇO INFANTIL</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO LOCALIZAÇÃO -->
+    <section class="section-localizacao" id="localizacao">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-subtitle-tag"><i data-lucide="map-pin"></i> NOSSO ENDEREÇO</span>
+                <h2 class="section-title">COMO CHEGAR AO SONG FEST.</h2>
+                <p class="section-description">
+                    Nosso espaço fica em uma rua de fácil acesso no Jardim Dona Sinha, perfeita para seus convidados chegarem com tranquilidade.
+                </p>
+            </div>
+
+            <div class="localizacao-wrapper">
+                <!-- Card de Informações -->
+                <div class="localizacao-card">
+                    <div class="info-item">
+                        <i data-lucide="map-pin" class="info-icon"></i>
+                        <div>
+                            <h4>Endereço Principal</h4>
+                            <p>R. Nova Gales do Sul, 78 - Jardim Dona Sinha, São Paulo - SP, 03924-220</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="clock" class="info-icon"></i>
+                        <div>
+                            <h4>Horário de Visita</h4>
+                            <p>A combinar</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="shield-check" class="info-icon"></i>
+                        <div>
+                            <h4>Fácil Localização</h4>
+                            <p>Uma rua tranquila e bem localizada no bairro, facilitando o acesso de todos.</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="car" class="info-icon"></i>
+                        <div>
+                            <h4>Estacionamento Sem Complicação</h4>
+                            <p>Amplo espaço para estacionar na praça em frente ao salão, com muitas vagas gratuitas disponíveis para os convidados.</p>
+                        </div>
+                    </div>
+                    <a href="https://maps.google.com/?q=R.+Nova+Gales+do+Sul,+78+-+Jardim+Dona+Sinha,+S%C3%A3o+Paulo+-+SP,+03924-220" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn btn-secondary btn-full" 
+                       id="btn-maps">
+                       <i data-lucide="navigation" class="btn-icon"></i>
+                       ABRIR NO MAPS
+                    </a>
+                </div>
+
+                <!-- Mapa Incorporado -->
+                <div class="localizacao-map-container">
+                    <div class="map-glow"></div>
+                    <!-- Google Maps Iframe Estilizado para Escuro via CSS -->
+                    <iframe 
+                        src="https://maps.google.com/maps?q=R.%20Nova%20Gales%20do%20Sul,%2078%20-%20Jardim%20Dona%20Sinha,%20S%C3%A3o%20Paulo%20-%20SP,%2003924-220&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        title="Mapa de localização Song Fest">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Identificação da Entrada e Fachada -->
+            <div class="fachada-container">
+                <div class="fachada-header">
+                    <span class="section-subtitle-tag"><i data-lucide="info"></i> COMO NOS ENCONTRAR E ESTACIONAR</span>
+                    <h3>Fachada e Estacionamento</h3>
+                    <p style="color: var(--text-secondary); max-width: 700px; margin: 0 auto; line-height: 1.5; margin-bottom: 1rem;">O Song Fest fica no andar superior (acima da GMOS Veículos), com entrada pelo portão preto nº 78. Logo em frente, há um lindo parque/praça com amplo espaço e facilidade para estacionar os carros dos seus convidados.</p>
+                </div>
+                <div class="fachada-grid">
+                    <div class="fachada-item" data-lightbox-src="assets/fachada-geral.jpg" data-lightbox-caption="Vista Geral da Esquina - Prédio do Salão">
+                        <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                        <img src="assets/fachada-geral.jpg" alt="Visão Geral do Prédio de Esquina">
+                        <div class="fachada-overlay">Vista Geral da Esquina</div>
+                    </div>
+                    <div class="fachada-item" data-lightbox-src="assets/fachada-entrada.jpg" data-lightbox-caption="Portão de Entrada - Nº 78">
+                        <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                        <img src="assets/fachada-entrada.jpg" alt="Portão de Acesso Principal - Número 78">
+                        <div class="fachada-overlay">Portão de Entrada - Nº 78</div>
+                    </div>
+                    <div class="fachada-item" data-lightbox-src="assets/fachada-logo.jpg" data-lightbox-caption="Identificação no Andar Superior">
+                        <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                        <img src="assets/fachada-logo.jpg" alt="Identificação Visual no Andar Superior">
+                        <div class="fachada-overlay">Identificação no Andar Superior</div>
+                    </div>
+                    <div class="fachada-item" data-lightbox-src="assets/estacionamento-1.jpg" data-lightbox-caption="Praça em frente ao salão - Estacionamento amplo e gratuito">
+                        <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                        <img src="assets/estacionamento-1.jpg" alt="Amplo estacionamento na praça em frente ao salão">
+                        <div class="fachada-overlay">Praça em frente ao salão</div>
+                    </div>
+                    <div class="fachada-item" data-lightbox-src="assets/estacionamento-2.jpg" data-lightbox-caption="Vagas fáceis e tranquilas para bastantes carros">
+                        <div class="zoom-hint" title="Clique para ampliar"><i data-lucide="zoom-in"></i></div>
+                        <img src="assets/estacionamento-2.jpg" alt="Vagas para carros na praça em frente">
+                        <div class="fachada-overlay">Vagas fáceis e tranquilas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO INSTAGRAM -->
+    <section class="section-instagram" id="siga-instagram">
+        <div class="section-container">
+            <div class="instagram-wrapper">
+                <!-- Coluna de Informações / Apresentação Minimalista -->
+                <div class="instagram-info-column">
+                    <span class="section-subtitle-tag"><i data-lucide="instagram"></i> NOSSO INSTAGRAM</span>
+                    <a href="https://www.instagram.com/_songfest_?igsh=MXNiN2xzbTN6eTZyNw==" target="_blank" rel="noopener noreferrer" class="instagram-brand-icon-link">
+                        <div class="instagram-brand-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </div>
+                    </a>
+                    <h3 class="instagram-main-title">Siga a gente no Instagram</h3>
+                    <p class="instagram-main-text">
+                        Conheça nossa página no Instagram e acompanhe todas as novidades, decorações reais e bastidores do salão.
+                    </p>
+                    <p class="instagram-main-text-secondary">
+                        Clique na imagem ao lado ou no botão abaixo para explorar nosso perfil e se inspirar com as festas que acontecem no Song Fest.
+                    </p>
+
+                    <div class="instagram-action-container">
+                        <a href="https://www.instagram.com/_songfest_?igsh=MXNiN2xzbTN6eTZyNw==" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn btn-secondary btn-large btn-instagram-follow"
+                           id="btn-instagram-follow">
+                            <i data-lucide="instagram" class="btn-icon"></i>
+                            CONHECER NOSSO INSTAGRAM
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna Visual / Feed Simulado Totalmente Clicável -->
+                <a href="https://www.instagram.com/_songfest_?igsh=MXNiN2xzbTN6eTZyNw==" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="instagram-visual-link-wrapper">
+                    <div class="instagram-visual-column">
+                        <div class="instagram-feed-header">
+                            <div class="instagram-avatar">
+                                <img src="assets/logo.jpg" alt="Logo Song Fest">
+                            </div>
+                            <div class="instagram-profile-meta">
+                                <span class="instagram-username">_songfest_</span>
+                                <span class="instagram-verified"><i data-lucide="badge-check"></i> Espaço de Eventos</span>
+                            </div>
+                        </div>
+                        
+                        <div class="instagram-mosaico-grid">
+                            <div class="instagram-mosaico-item">
+                                <img src="assets/galeria-1.jpg" alt="Foto do Instagram - Decoração no Salão">
+                                <div class="instagram-item-overlay">
+                                    <i data-lucide="instagram"></i>
+                                </div>
+                            </div>
+                            <div class="instagram-mosaico-item">
+                                <img src="assets/kids.jpg" alt="Foto do Instagram - Brinquedão e Espaço Kids">
+                                <div class="instagram-item-overlay">
+                                    <i data-lucide="instagram"></i>
+                                </div>
+                            </div>
+                            <div class="instagram-mosaico-item">
+                                <img src="assets/churrasqueira.jpg" alt="Foto do Instagram - Área Gourmet Integrada">
+                                <div class="instagram-item-overlay">
+                                    <i data-lucide="instagram"></i>
+                                </div>
+                            </div>
+                            <div class="instagram-mosaico-item">
+                                <img src="assets/sinuca.jpg" alt="Foto do Instagram - Mesa de Sinuca Profissional">
+                                <div class="instagram-item-overlay">
+                                    <i data-lucide="instagram"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CTA FINAL -->
+    <section class="section-cta" id="contato">
+        <div class="cta-image-bg" style="background-image: url('assets/hero.jpg');"></div>
+        <div class="cta-overlay"></div>
+        
+        <div class="section-container">
+            <div class="cta-content">
+                <h2 class="cta-title">VAMOS PLANEJAR A SUA FESTA?</h2>
+                <p class="cta-description">
+                    Entre em contato conosco pelo WhatsApp para verificar as datas disponíveis e tirar todas as suas dúvidas. Estamos prontos para receber você!
+                </p>
+                <a href="https://wa.me/5511945280491?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20meu%20evento%20no%20Song%20Fest." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-primary btn-large btn-cta-whatsapp" 
+                   id="btn-cta-final">
+                    <i data-lucide="phone-call" class="btn-icon"></i>
+                    FALAR NO WHATSAPP
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer-section">
+        <div class="section-container">
+            <div class="footer-grid">
+                <!-- Coluna 1: Logo e Descrição -->
+                <div class="footer-col-brand">
+                    <a href="#inicio" class="footer-logo">
+                        <img src="assets/logo.jpg" alt="Logo Song Fest" class="logo-img-footer">
+                    </a>
+                    <p class="footer-brand-desc">
+                        O espaço ideal para a sua comemoração. Conforto, organização e lazer completo para criar momentos especiais com quem você ama.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/_songfest_?igsh=MXNiN2xzbTN6eTZyNw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="https://wa.me/5511945280491" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i data-lucide="phone"></i></a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Links Rápidos -->
+                <div class="footer-col-links">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#estrutura">Estrutura</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#localizacao">Localização</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Contatos -->
+                <div class="footer-col-contact">
+                    <h4 class="footer-title">Contato direto</h4>
+                    <ul class="footer-contact-list">
+                        <li><a href="https://wa.me/5511945280491"><i data-lucide="phone"></i> (11) 94528-0491</a></li>
+                        <li><span class="contact-address"><i data-lucide="map-pin"></i> Jardim Dona Sinha, São Paulo - SP</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Song Fest. Todos os direitos reservados. Espaço moderno e acolhedor para a sua celebração.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL (VISUALIZADOR DE GALERIA) -->
+    <div class="lightbox-modal" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close-btn" aria-label="Fechar visualizador">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev-btn" aria-label="Imagem anterior">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next-btn" aria-label="Próxima imagem">&#10095;</button>
+        <div class="lightbox-content">
+            <img src="" alt="Ampliação da imagem da galeria" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption">Legenda da Imagem</div>
+        </div>
+    </div>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5511945280491?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20meu%20evento%20no%20Song%20Fest." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-floating-btn" 
+       aria-label="Fale conosco no WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.498 1.45 5.441 1.452 5.408 0 9.809-4.4 9.813-9.813.002-2.623-1.017-5.086-2.87-6.941C17.13 1.992 14.67 1.01 12.001 1.01c-5.41 0-9.813 4.403-9.817 9.817-.002 1.947.5 3.841 1.453 5.438L2.617 21.29l5.03-1.32c-.005 0-.005 0 0 0zM17.483 14.32c-.302-.15-1.787-.882-2.062-.982-.275-.1-.475-.15-.675.15-.2.3-.775 1-.95 1.185-.175.19-.35.21-.65.06-1.162-.58-1.923-1.012-2.686-2.317-.2-.35-.2-.65-.05-.8.136-.137.302-.35.452-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.589-.493-.51-.675-.52-.172-.007-.368-.009-.565-.009-.196 0-.518.074-.789.374-.271.3-1.035 1.012-1.035 2.47 0 1.457 1.06 2.868 1.21 3.068.15.2 2.085 3.182 5.05 4.466.705.305 1.256.487 1.683.623.708.225 1.353.193 1.862.117.568-.085 1.787-.732 2.037-1.438.25-.705.25-1.312.175-1.438-.075-.125-.275-.2-.575-.35z"/></svg>
+    </a>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
