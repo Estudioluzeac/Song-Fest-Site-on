@@ -382,4 +382,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    /* ==========================================================================
+       9. RASTREAMENTO DE CONVERSÃO (GOOGLE ADS)
+       ========================================================================== */
+    const whatsappButtons = document.querySelectorAll('a[href*="wa.me"]');
+    whatsappButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            if (typeof gtag_report_conversion === 'function') {
+                if (btn.target === '_blank') {
+                    // Para links que abrem em nova aba, envia a conversão sem redirecionar na aba atual
+                    gtag_report_conversion();
+                } else {
+                    // Para links que abrem na mesma aba, usa o fluxo padrão do Google com callback
+                    e.preventDefault();
+                    gtag_report_conversion(btn.href);
+                }
+            }
+        });
+    });
 });
